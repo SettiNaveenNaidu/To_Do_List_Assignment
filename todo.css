@@ -1,0 +1,210 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(215, 231, 231);
+}
+.to_do_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.add_task{
+    width: 100%;
+    max-width: 500px;   
+    padding: 12px;
+    margin-top: 20px;
+    
+}
+#input_text{
+    width:70%;
+    border: none;
+    outline: none;
+    padding: 12px;
+    margin-block: 18px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+#add_button{
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    margin-left: 8px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 12px;
+    margin-block: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+#add_button:hover{
+    background-color: rgb(238, 231, 231);
+    color: black;
+}
+#tasks{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.task_item{
+    width: 100%;
+    max-width: 500px;
+     display: flex;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    flex-direction: column;
+    border-radius: 8px;
+    margin-block-end: 5px;
+    padding: 10px 12px;
+    
+}
+.buttons{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    cursor: pointer;
+    outline: none;
+    border: 0.125px solid #a19f9f;
+    border-radius: 8px;
+    margin-block-end: 2px;
+    padding: 6px 12px;
+    background-color: white;
+}
+.edit{
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: blue;
+    padding: 6px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+.edit:hover{
+    background-color: blue;
+    color: white;
+}
+.delete{
+    display: block;
+    border: none;
+    outline: none;
+    background-color: white;
+    color:red;
+    padding: 6px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+.delete:hover{
+    background-color: red;
+    color: white;
+}
+.each_task_input{
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 400;
+    width: 78%;
+    white-space: initial;
+}
+input[type=text] {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.save{
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    padding: 6px;
+    border-radius: 3px;
+    color: green; 
+    background-color: white;  
+}
+.save:hover{
+    background-color: green;
+    color: white;
+}
+.tasks_self{
+    width: 100%;
+    max-width:500px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 4px ;  
+    margin-block-end: 12px;
+    margin-left: 10px; 
+}
+.all_tasks,.ongoing,.completed_task,.expired
+{
+    border: none;
+    outline: none;
+    background-color:black;
+    color: white;
+    font-weight: 600;
+    padding: 6px;
+    border-radius: 6px;
+    width: 100px;
+}
+#date,#priority,#priority_val,#sort_duedate{
+    border: 0px solid black;
+    border-radius: 6px;
+    padding: 8px;
+    font-weight: 500;
+}
+.due_date{
+    width: 30%;
+    height: 4vh;
+    padding:5px;
+    border: none;
+    border-radius: 8px;
+    align-self:flex-end;
+    outline: none;
+    font-weight: 600;
+    pointer-events: none;
+}
+#search{
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding: 8px;
+    font-weight: 500;
+    margin-block-end: 12px;
+}
+.search_container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 500px;
+    padding:12px 2px;
+}
+.sort_container{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block-end: 12px;
+    font-weight: 500;
+
+}
+.sort_container label{
+    padding: 12px;
+    
+}
+.checkbox{
+    padding: 2px;
+    margin-right: 10px;
+}
+
+

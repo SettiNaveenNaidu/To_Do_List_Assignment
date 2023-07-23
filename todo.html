@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To_Do_List</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="to_do_list">
+<!--Adding Task Container-->
+        <div class="add_task">
+            <h2 style="text-align: center;">To Do List</h2>
+            <div class="add_wrapper">
+                <input id="input_text" placeholder="enter task to perform" type="text" required>                         
+                <button id="add_button" onclick="adding_task()" >Add Task</button>
+                <input type="datetime-local" id="date" required> 
+                <select id="priority" required>
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>  
+            </div>                      
+        </div>
+
+<!--Search Container-->
+        <div class="search_container">
+            <input type="text" id='search' class="search" placeholder="search">  
+        </div>
+    
+<!--Filtering-->
+        <div class="tasks_self">
+            <button onclick="AllTasks()" class="all_tasks">All Tasks</button>
+            <button onclick="ongoing()" class="ongoing">Ongoing</button>   
+           <button onclick="completed()" class="completed_task">Completed</button>  
+           <button onclick="expired()" class="expired">expired</button>             
+        </div>
+
+<!--Sort Container-->
+        <div class="sort_container">
+            <label for="priority_val">Priority :</label>
+            <select id="priority_val">
+                <option value="high_to_low">High_To_Low</option>
+                <option value="low_to_high">Low_To_Low</option>    
+            </select> 
+            <label for="sort_duedate">Due Date :</label>
+            <select id="sort_duedate">
+                <option value="earliest_first">Earliest_First</option>
+                <option value="farthest_first">Earliest_Last</option>    
+            </select> 
+        </div>
+<!--Task Items Container-->
+        <h2>Tasks</h2>
+        <div class="tasks" id="tasks">
+        </div>
+    </div>
+    
+    <script src="todo.js"></script>
+</body>
+</html>
